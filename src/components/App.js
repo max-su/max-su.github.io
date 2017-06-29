@@ -4,10 +4,12 @@ import Home from './Home';
 import PageNotFound from './PageNotFound';
 
 export default function App() {
+  /* Switch
+   * Renders the first child <Route> or <Redirect> that matches the location.
+   */
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      {/* <Route path="/example" component={ExampleComponent} /> */}
       <Route component={PageNotFound} />
     </Switch>
   );
