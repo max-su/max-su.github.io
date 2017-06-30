@@ -15,9 +15,8 @@ module.exports = {
     ],
   },
   resolve: {
-    modules: [
-      path.resolve('./src'),
-      path.resolve('./node_modules')
+    alias: [
+      src: path.resolve('./src'),
     ]
   },
   plugins: process.argv.indexOf('-p') === -1 ? [] : [
