@@ -15,9 +15,9 @@ module.exports = {
     ],
   },
   resolve: {
-    alias: [
+    alias: {
       src: path.resolve('./src'),
-    ]
+    }
   },
   plugins: process.argv.indexOf('-p') === -1 ? [] : [
     new webpack.optimize.UglifyJsPlugin({
