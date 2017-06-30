@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Home from './Home';
-import PageNotFound from './PageNotFound';
+import Home from 'src/page_views/Home';
+import PageNotFound from 'src/page_views/PageNotFound';
 
 export default function App() {
   return (
