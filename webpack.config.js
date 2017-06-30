@@ -7,6 +7,8 @@ const extractSass = new ExtractTextPlugin({
       disable: process.env.NODE_ENV === "development"
 });
 
+
+
 module.exports = {
   entry: `${__dirname}/src/index.js`,
   output: {
@@ -30,6 +32,15 @@ module.exports = {
         }),
       }
     ],
+    loaders: [
+    {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+            'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+            'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+    }
+]
   },
   resolve: {
     alias: {
