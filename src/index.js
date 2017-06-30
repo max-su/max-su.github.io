@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import App from './page_views/App';
+import App from 'src/page_views/App';
 
 ReactDOM.render(
   <BrowserRouter>
