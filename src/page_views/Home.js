@@ -1,9 +1,23 @@
 import React from 'react';
+import Header from 'src/page_views/shared/Header';
+import Navbar from 'src/page_views/shared/Navbar';
+import Footer from 'src/page_views/shared/Footer';
 
-export default function Home() {
+export function Home({ match }) {
   return (
     <div>
-      <p>Whomst</p>
+      <Header />
+      <Navbar />
+      <div>
+        <p>Whomst</p>
+      </div>
+      <Footer />
     </div>
   );
 }
+
+Home.propTypes = {
+  match: React.PropTypes.object.isRequired,
+};
+
+export default Home;
