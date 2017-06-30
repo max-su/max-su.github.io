@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-const propTypes = {
-  location: PropTypes.object.isRequired,
-};
+// const propTypes = {
+//   location: PropTypes.object.isRequired,
+// };
 
 export default function PageNotFound() {
   return (
@@ -13,4 +13,4 @@ export default function PageNotFound() {
   );
 }
 
-PageNotFound.propTypes = propTypes;
+// PageNotFound.propTypes = propTypes;
