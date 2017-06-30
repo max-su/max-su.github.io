@@ -1,5 +1,11 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 var path = require('path');
+
+const extractSass = new ExtractTextPlugin({
+      filename: "[name].[contenthash].css",
+      disable: process.env.NODE_ENV === "development"
+});
 
 module.exports = {
   entry: `${__dirname}/src/index.js`,
@@ -12,6 +18,17 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      { test: /\.scss$/,
+        use: extractSass.extract({
+            use: [{
+                loader: "css-loader"
+            }, {
+                loader: "sass-loader"
+            }],
+            // use style-loader in development
+            fallback: "style-loader"
+        }),
+      }
     ],
   },
   resolve: {
