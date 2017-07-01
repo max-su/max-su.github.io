@@ -1,10 +1,10 @@
 {
-  "name": "spa-github-pages",
-  "version": "5.0.0",
+  "name": "Max Su - Personal website",
+  "version": "1.0.0",
   "private": true,
-  "description": "Single Page Apps for GitHub Pages",
+  "description": "Max Su - Software Engineer",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open",
+    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open --public",
     "build": "webpack -p"
   },
   "repository": {
