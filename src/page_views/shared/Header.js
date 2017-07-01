@@ -1,7 +1,7 @@
 import React from 'react';
 import MaxSuJPG from 'src/assets/images/max.jpg';
 
-import 'src/assets/styles/_headers.scss';
+import 'src/assets/styles/_header.scss';
 
 export default function Header() {
   return (
