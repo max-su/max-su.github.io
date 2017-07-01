@@ -1,4 +1,23 @@
+@import "_colors.scss";
+
 #header_icon {
   max-width: 160px;
+  padding-top: 20px;
   width: 100%;
+}
+
+#header {
+  padding-bottom: 10px;
+  p {
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0 0;
+  font-weight: 300;
 }
