@@ -1,8 +1,12 @@
 import React from 'react';
+import MaxSuJPG from 'src/assets/images/max.jpg';
+
+import 'src/assets/styles/_headers.scss';
 
 export default function Header() {
   return (
-    <header>
+    <header className="center-align">
+      <img className="circle responsive-img" src={MaxSuJPG} alt="Max Su" />
       <h1> Whomst am I </h1>
     </header>
   );
