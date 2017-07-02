@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
       <div className="footer-copyright">
         <div className={`${FooterClassText} container`}>
-          © {new Date().getFullYear()}  Max Su, All rights reserved.
+          © {new Date().getFullYear()} Max Su
           <a
             className={`${FooterClassText} right`}
             href="https://github.com/max-su/max-su.github.io/blob/master/LICENSE"
