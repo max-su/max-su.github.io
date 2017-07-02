@@ -1,0 +1,22 @@
+@import "_colors.scss";
+$chip-height: 20px;
+$line-height: $chip-height + 2px;
+$height: $chip-height - 2px;
+
+a {
+  height: $chip-height;
+}
+
+a .chip {
+  height: $chip-height;
+  line-height: $line-height;
+  > img {
+    height: $height;
+    /* margin: top, right, bottom, left */
+    margin: 1px 0 0 -12px;
+  }
+}
+
+#footerMain p a .chip {
+  font-weight: 300;
+}
