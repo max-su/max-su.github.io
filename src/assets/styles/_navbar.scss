@@ -1,6 +1,6 @@
 @import "_colors.scss";
-$line-height: 45px;
-
+$line-height: 64px;
+/*
 nav {
   height: $line-height;
   .button-collapse i {
@@ -20,3 +20,19 @@ nav {
     }
   }
 }
+*/
+.nav-wrapper div .hide-on-med-and-down{
+  list-style: none;
+  text-align: center;
+  li {
+    vertical-align: top;
+    display: inline-block;
+    float: none;
+    line-height: $line-height;
+    a {
+      color: $egg-white-yellow;
+      display: inline-block;
+    }
+  }
+}
+
