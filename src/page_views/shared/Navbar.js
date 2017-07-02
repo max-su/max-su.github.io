@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BackgroundClass } from 'src/assets/style_constants.js';
 import 'src/assets/styles/_navbar.scss';
 
 
@@ -18,7 +19,7 @@ export default function Navbar() {
     </div>
   );
   return (
-    <nav className="emperor-gray-background">
+    <nav className={BackgroundClass}>
       <a href="#!" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
       <div className="nav-wrapper center">
         <ul className="hide-on-med-and-down center">

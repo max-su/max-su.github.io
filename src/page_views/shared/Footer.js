@@ -1,7 +1,8 @@
 import React from 'react';
 import { FooterClassHeaderText,
          FooterClassText,
-         FooterClassTextActive } from 'src/assets/style_constants.js';
+         FooterClassTextActive,
+         BackgroundClass } from 'src/assets/style_constants.js';
 import ListItemsLink from 'src/components/ListItems';
 
 import 'src/assets/styles/_footer.scss';
@@ -10,7 +11,7 @@ export default function Footer() {
   const arrayTextUrl = [['/whomst', 'whomst'],
                         ['/whomst', 'whomst']];
   return (
-    <footer className="page-footer emperor-gray-background">
+    <footer className={`page-footer ${BackgroundClass}`}>
       <div className="container">
         <div className="row">
           <div className="col l6 s12">
