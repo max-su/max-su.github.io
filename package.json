@@ -1,8 +1,8 @@
 {
-  "name": "Max Su's Personal website",
+  "name": "max_su_personal_website",
   "version": "1.0.0",
   "private": true,
-  "description": "Max Su",
+  "description": "Personal website",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback --open --public",
     "build": "webpack -p"
