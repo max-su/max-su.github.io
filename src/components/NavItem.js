@@ -17,6 +17,6 @@ NavItem.defaultProps = {
 };
 
 NavItem.propTypes = {
-  url: PropTypes.string.required,
-  children: PropTypes.string.required,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
 };

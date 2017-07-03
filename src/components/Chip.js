@@ -32,7 +32,7 @@ Chip.defaultProps = {
 
 Chip.propTypes = {
   textAltImage: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired, // SVG
   url: PropTypes.string,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string.isRequired, // Text
 };

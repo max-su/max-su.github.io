@@ -18,10 +18,10 @@ export default function NavBar(props) {
 
 NavBar.defaultProps = {
   className: 'emperor-gray-background',
-  children: '',
+  children: [],
 };
 
 NavBar.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.object,
+  className: PropTypes.string.isRequired,
+  children: PropTypes.array.isRequired,
 };
