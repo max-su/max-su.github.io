@@ -1,41 +1,31 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import ListItemsLink from 'src/components/ListItems';
+
+/* Styling */
 import { FooterClassHeaderText,
          FooterClassText,
          BackgroundClass } from 'src/assets/style_constants.js';
-import ListItemsLink from 'src/components/ListItems';
-import Chip from 'src/components/Chip';
-
-import reactJsSVG from 'src/assets/images/reactJs.svg';
-
 import 'src/assets/styles/_footer.scss';
+/* Styling */
 
-export default function Footer() {
-  const arrayTextUrl = [['/whomst', 'whomst'],
-                        ['/whomst', 'whomst']];
-  const reactChip = (
-    <Chip
-      image={reactJsSVG}
-      textAltImage={'React.js SVG'}
-      url={'https://facebook.github.io/react/'}
-    >
-      React.js
-    </Chip>
-    );
+export default function Footer(props) {
+  const title = props.title;
+  const mainContent = props.mainContent;
+  const arrayTextUrls = props.arrayTextUrls;
   return (
     <footer className={`page-footer ${BackgroundClass}`}>
       <div className="container">
         <div className="row">
-          <div className="col l10 s12" id="footerMain">
-            <h5 className={FooterClassHeaderText}>Dependencies</h5>
-            <p className={FooterClassText}>
-              Created with {reactChip}
-            </p>
+          <div className="col l8 s12" id="footerMain">
+            <h5 className={FooterClassHeaderText}>{title}</h5>
+            {mainContent}
           </div>
-          <div className="col l2 s12" id="footerLinks">
+          <div className="col l4 s12" id="footerLinks">
             <h5 className={FooterClassHeaderText}>Links</h5>
             <ListItemsLink
               textClass={FooterClassText}
-              arrayTextUrl={arrayTextUrl}
+              arrayTextUrl={arrayTextUrls}
             />
           </div>
         </div>
@@ -45,6 +35,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Max Su
           <a
             className={`${FooterClassText} right`}
+            id={'firefox-link'}
             href="https://github.com/max-su/max-su.github.io/blob/master/LICENSE"
           >
             <span role="img" aria-label="Fox Emoji">🦊</span> Mozilla Public License 2.0
@@ -54,3 +45,18 @@ export default function Footer() {
     </footer>
   );
 }
+
+const arrayTextUrlDefault = [['/whomst', 'whomst'],
+                            ['/whomst', 'whomst']];
+
+Footer.defaultProps = {
+  title: '',
+  mainContent: <p>Default</p>,
+  arrayTextUrls: arrayTextUrlDefault,
+};
+
+Footer.propTypes = {
+  title: PropTypes.string.isRequired,
+  mainContent: PropTypes.object.isRequired,
+  arrayTextUrls: PropTypes.array.isRequired,
+};

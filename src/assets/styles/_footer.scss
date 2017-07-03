@@ -1,13 +1,18 @@
 @import "_colors.scss";
 $font-weight: 300;
 
-#footerMain, #footerLinks h5 p {
+#footerMain, #footerLinks, div h5 p {
   font-weight: $font-weight;
 }
 
 #footerLinks ul li a {
   font-weight: $font-weight;
 }
+
 a:hover {
   color: $aqua;
+}
+
+#firefox-link:hover {
+  color: $bitter-sweet-red;
 }
