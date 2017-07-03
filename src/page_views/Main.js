@@ -3,7 +3,7 @@ import React from 'react';
 export function Main() {
   return (
     <main>
-      <p>Big whomst</p>
+      <p>Filler~</p>
     </main>
   );
 }
