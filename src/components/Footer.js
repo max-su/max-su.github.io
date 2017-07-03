@@ -35,6 +35,7 @@ export default function Footer(props) {
           © {new Date().getFullYear()} Max Su
           <a
             className={`${FooterClassText} right`}
+            id={'firefox-link'}
             href="https://github.com/max-su/max-su.github.io/blob/master/LICENSE"
           >
             <span role="img" aria-label="Fox Emoji">🦊</span> Mozilla Public License 2.0

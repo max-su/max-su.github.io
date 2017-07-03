@@ -8,6 +8,11 @@ $font-weight: 300;
 #footerLinks ul li a {
   font-weight: $font-weight;
 }
+
 a:hover {
   color: $aqua;
+}
+
+#firefox-link:hover {
+  color: $bitter-sweet-red;
 }

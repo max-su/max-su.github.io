@@ -15,13 +15,6 @@ export default function FooterWrapper() {
       Created with {reactChip}
     </div>
   );
-  // const mainContent = (
-  //   <div>
-  //     <p className={FooterClassText}>
-  //       Created with {reactChip}
-  //     </p>
-  //   </div>
-  // );
   return (
     <Footer
       title={title}
