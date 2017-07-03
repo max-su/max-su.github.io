@@ -22,7 +22,6 @@
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-materialize": "^1.0.3",
     "react-router-dom": "^4.1.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2"

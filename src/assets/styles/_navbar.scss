@@ -21,8 +21,11 @@ nav {
   }
 }
 */
-.nav-wrapper div .hide-on-med-and-down{
-  list-style: none;
+nav {
+  height: 64px;
+}
+.nav-wrapper div .center{
+  // list-style: none;
   text-align: center;
   li {
     vertical-align: top;
@@ -35,4 +38,3 @@ nav {
     }
   }
 }
-
