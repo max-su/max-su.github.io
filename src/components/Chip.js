@@ -7,11 +7,17 @@ import 'src/assets/styles/_chips.scss';
 
 export default function Chip(props) {
   const textAltImage = props.textAltImage;
-  const image = props.image;
   const url = props.url;
+  let image = props.image;
+
+  if (image != null) {
+    image = (
+      <img src={image} alt={textAltImage} />
+    );
+  }
   const chip = (
     <div className={`chip ${ChipBackground} ${ChipText}`}>
-      <img src={image} alt={textAltImage} />
+      {image}
       {props.children}
     </div>
   );
@@ -28,11 +34,13 @@ export default function Chip(props) {
 
 Chip.defaultProps = {
   url: null,
+  image: null,
+  textAltImage: null,
 };
 
 Chip.propTypes = {
-  textAltImage: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired, // SVG
+  textAltImage: PropTypes.string,
+  image: PropTypes.string, // SVG
   url: PropTypes.string,
   children: PropTypes.string.isRequired, // Text
 };

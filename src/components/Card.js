@@ -9,7 +9,16 @@ import 'src/assets/styles/_cards.scss';
 export default function Card(props) {
   const header = props.header;
   const body = props.body;
+
+  const pills = props.pills;
   let actionItem = props.actionItem;
+  // let divider = null;
+
+  // if (pills != null || actionItem != null) {
+  //   divider = (
+  //     <div className="divider" />
+  //   );
+  // }
 
   if (actionItem != null) {
     actionItem = (
@@ -26,17 +35,22 @@ export default function Card(props) {
         </span>
         {body}
       </div>
-      {actionItem}
+      <div className="section">
+        {pills}
+        {actionItem}
+      </div>
     </div>
   );
 }
 
 Card.defaultProps = {
   actionItem: null,
+  pills: null,
 };
 
 Card.propTypes = {
   header: PropTypes.string.isRequired,
   body: PropTypes.object.isRequired,
+  pills: PropTypes.array,
   actionItem: PropTypes.object,
 };
