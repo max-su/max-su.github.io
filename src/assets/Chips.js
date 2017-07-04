@@ -22,17 +22,17 @@ export const pythonChip = (
     Python
   </Chip>
 );
-export const agribleChip = (
-  <Chip
-    url={'http://www.agrible.com/'}
-  >
-    Agrible
-  </Chip>
-);
-export const uiucChip = (
-  <Chip
-    url={'http://illinois.edu/'}
-  >
-    University of Illinois at Urbana-Champaign
-  </Chip>
-);
+// export const agribleChip = (
+//   <Chip
+//     url={'http://www.agrible.com/'}
+//   >
+//     Agrible
+//   </Chip>
+// );
+// export const uiucChip = (
+//   <Chip
+//     url={'http://illinois.edu/'}
+//   >
+//     University of Illinois at Urbana-Champaign
+//   </Chip>
+// );

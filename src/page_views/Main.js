@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from 'src/components/Card';
 import BoldText from 'src/components/BoldText';
-import { agribleChip, uiucChip, pythonChip, reactChip } from 'src/assets/Chips';
+import { pythonChip, reactChip } from 'src/assets/Chips';
 
 import { MainBackground, MainLinks } from 'src/assets/style_constants.js';
 import 'src/assets/styles/_main.scss';
@@ -49,12 +49,11 @@ export default function Main() {
             <Card
               header={'Education'}
               body={educationBody}
-              pills={[uiucChip]}
             />
             <Card
               header={'Employment'}
               body={employmentBody}
-              pills={[agribleChip, pythonChip, reactChip]}
+              pills={[pythonChip, reactChip]}
             />
           </div>
         </div>
