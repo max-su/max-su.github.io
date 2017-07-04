@@ -2,6 +2,7 @@ import React from 'react';
 import Chip from 'src/components/Chip';
 
 import reactJs from 'src/assets/images/reactJs.svg';
+import python from 'src/assets/images/python.png';
 
 export const reactChip = (
   <Chip
@@ -10,6 +11,15 @@ export const reactChip = (
     url={'https://facebook.github.io/react/'}
   >
     React.js
+  </Chip>
+);
+export const pythonChip = (
+  <Chip
+    image={python}
+    textAltImage={'Python'}
+    url={'https://www.python.org/'}
+  >
+    Python
   </Chip>
 );
 export const agribleChip = (

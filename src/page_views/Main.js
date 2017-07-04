@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Card from 'src/components/Card';
-import { agribleChip, uiucChip } from 'src/assets/Chips';
+import BoldText from 'src/components/BoldText';
+import { agribleChip, uiucChip, pythonChip, reactChip } from 'src/assets/Chips';
 
 import { MainBackground, MainLinks } from 'src/assets/style_constants.js';
 import 'src/assets/styles/_main.scss';
@@ -9,30 +10,37 @@ import 'src/assets/styles/_main.scss';
 export default function Main() {
   const educationBody = (
     <p>
-      Hi! My name is Max and I&apos;m a junior studying Computer Science & Statistics at the
-      University of Illinois at Urbana-Champaign.
+      Hi! My name is Max and I&apos;m a&nbsp;
+      <BoldText>junior studying Computer Science & Statistics</BoldText>
+      &nbsp;at the University of Illinois at Urbana-Champaign.
     </p>
   );
   const employmentBody = (
     <p>
-      I&apos;m currently working as a full stack software engineering intern at&nbsp;
+      I&apos;m currently working as a&nbsp;
+      <BoldText>
+        full stack software engineering intern
+      </BoldText>
+      &nbsp;at&nbsp;
         <a href="http://www.agrible.com/" className={MainLinks}>
           <span role="img" aria-label="Chicken Emoji">
             🐓
           </span>
           Agrible
         </a>
-      &nbsp;writing React.js and Python.
+        , a team of agronomists, atmospheric scientists, and developers who share a common goal:
+        to transform the future of farming. We help growers realize the promise of big data
+        and technology.
     </p>
   );
-  const bigBody = (
-    <p>
-      我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-      我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-      我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-      我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-    </p>
-  );
+  // const bigBody = (
+  //   <p>
+  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
+  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
+  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
+  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
+  //   </p>
+  // );
   return (
     <main className={MainBackground}>
       <div className="container">
@@ -41,24 +49,12 @@ export default function Main() {
             <Card
               header={'Education'}
               body={educationBody}
-              pills={[agribleChip, uiucChip]}
+              pills={[uiucChip]}
             />
-            {/* Test */}
             <Card
-              header={'Work'}
+              header={'Employment'}
               body={employmentBody}
-            />
-            <Card
-              header={'Work'}
-              body={employmentBody}
-            />
-            <Card
-              header={'Test'}
-              body={bigBody}
-            />
-            <Card
-              header={'Work'}
-              body={employmentBody}
+              pills={[agribleChip, pythonChip, reactChip]}
             />
           </div>
         </div>

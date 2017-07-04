@@ -10,19 +10,19 @@ export default function Chip(props) {
   const url = props.url;
   let image = props.image;
 
-  if (image != null) {
+  if (image != null) { // Create image element
     image = (
       <img src={image} alt={textAltImage} />
     );
   }
-  const chip = (
+  const chip = ( // Create the main chip
     <div className={`chip ${ChipBackground} ${ChipText}`}>
       {image}
       {props.children}
     </div>
   );
 
-  if (url != null) {
+  if (url != null) { // Wrap it in a link to the url and return it
     return (
       <a href={url}>
         {chip}
