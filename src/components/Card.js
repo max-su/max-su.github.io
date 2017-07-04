@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { CardBackground,
+         CardTextHeader,
          CardText } from 'src/assets/style_constants.js';
 import 'src/assets/styles/_cards.scss';
 
@@ -22,7 +23,7 @@ export default function Card(props) {
     <div className={`col ${columnClass}`}>
       <div className={`card ${CardBackground}`}>
         <div className={`card-content ${CardText}`}>
-          <span className="card-title">
+          <span className={`card-title ${CardTextHeader}`}>
             {header}
           </span>
           {body}

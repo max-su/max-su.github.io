@@ -26,4 +26,5 @@ export const ChipText = 'egg-white-yellow-text';
 
 // Card
 export const CardBackground = 'egg-white-yellow-background';
+export const CardTextHeader = 'bitter-sweet-red-text';
 export const CardText = 'emperor-gray-text';
