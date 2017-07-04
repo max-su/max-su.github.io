@@ -15,6 +15,7 @@ export const HeaderButtonText = 'egg-white-yellow-text';
 
 // Main
 export const MainBackground = 'emperor-gray-background';
+export const MainLinks = 'bitter-sweet-red-text';
 
 // Footer
 export const FooterClassHeaderText = 'bitter-sweet-red-text';

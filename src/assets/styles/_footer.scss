@@ -5,6 +5,16 @@ $font-weight: 300;
   font-weight: $font-weight;
 }
 
+#footerMain div {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+#footerLinks ul {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
 #footerLinks ul li a {
   font-weight: $font-weight;
 }
