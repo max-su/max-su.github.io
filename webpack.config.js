@@ -2,9 +2,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 var path = require('path');
 
-
-
-
 module.exports = {
   entry: `${__dirname}/src/index.js`,
   output: {
@@ -58,6 +55,9 @@ module.exports = {
   plugins: process.argv.indexOf('-p') === -1 ?
     [new ExtractTextPlugin("styles.css"),] : [
     new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+      },
       output: {
         comments: false,
       },
