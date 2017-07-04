@@ -16,6 +16,12 @@ $height: $chip-height - 2px;
   }
 }
 
+#footerMain div a:hover {
+  div {
+    color: $aqua;
+  }
+}
+
 .chip {
   font-weight: 300;
 }
