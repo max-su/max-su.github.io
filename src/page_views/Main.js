@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { MainBackground } from 'src/assets/style_constants.js';
+import Card from 'src/components/Card';
 import 'src/assets/styles/_main.scss';
 
 export default function Main() {
@@ -9,7 +10,7 @@ export default function Main() {
       <div className="container">
         <div className="row">
           <div className="col s12">
-            First row big kappa
+            <Card />
           </div>
         </div>
       </div>

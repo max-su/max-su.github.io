@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { BackgroundClass } from 'src/assets/style_constants.js';
+
 export default function NavBar(props) {
   const className = props.className;
   return (
@@ -17,7 +19,7 @@ export default function NavBar(props) {
 }
 
 NavBar.defaultProps = {
-  className: 'emperor-gray-background',
+  className: BackgroundClass,
   children: [],
 };
 
