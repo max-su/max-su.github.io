@@ -7,10 +7,18 @@ import { CardBackground,
 import 'src/assets/styles/_cards.scss';
 
 export default function Card(props) {
-  const columnClass = props.columnClass;
   const header = props.header;
   const body = props.body;
+
+  const pills = props.pills;
   let actionItem = props.actionItem;
+  // let divider = null;
+
+  // if (pills != null || actionItem != null) {
+  //   divider = (
+  //     <div className="divider" />
+  //   );
+  // }
 
   if (actionItem != null) {
     actionItem = (
@@ -20,14 +28,15 @@ export default function Card(props) {
     );
   }
   return (
-    <div className={`col ${columnClass}`}>
-      <div className={`card ${CardBackground}`}>
-        <div className={`card-content ${CardText}`}>
-          <span className={`card-title ${CardTextHeader}`}>
-            {header}
-          </span>
-          {body}
-        </div>
+    <div className={`card ${CardBackground}`}>
+      <div className={`card-content ${CardText}`}>
+        <span className={`card-title ${CardTextHeader}`}>
+          {header}
+        </span>
+        {body}
+      </div>
+      <div className="section">
+        {pills}
         {actionItem}
       </div>
     </div>
@@ -35,13 +44,13 @@ export default function Card(props) {
 }
 
 Card.defaultProps = {
-  columnClass: 's12 m6',
   actionItem: null,
+  pills: null,
 };
 
 Card.propTypes = {
-  columnClass: PropTypes.string,
   header: PropTypes.string.isRequired,
   body: PropTypes.object.isRequired,
+  pills: PropTypes.array,
   actionItem: PropTypes.object,
 };

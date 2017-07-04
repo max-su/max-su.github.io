@@ -2,7 +2,7 @@ import React from 'react';
 import Chip from 'src/components/Chip';
 
 import reactJs from 'src/assets/images/reactJs.svg';
-import mfr from 'src/assets/images/mfrIcon.svg';
+import python from 'src/assets/images/python.png';
 
 export const reactChip = (
   <Chip
@@ -13,12 +13,26 @@ export const reactChip = (
     React.js
   </Chip>
 );
-export const mfrChip = (
+export const pythonChip = (
   <Chip
-    image={mfr}
-    textAltImage={'Agrible MFR'}
-    url={'http://www.agrible.com/'}
+    image={python}
+    textAltImage={'Python'}
+    url={'https://www.python.org/'}
   >
-    Agrible
+    Python
   </Chip>
 );
+// export const agribleChip = (
+//   <Chip
+//     url={'http://www.agrible.com/'}
+//   >
+//     Agrible
+//   </Chip>
+// );
+// export const uiucChip = (
+//   <Chip
+//     url={'http://illinois.edu/'}
+//   >
+//     University of Illinois at Urbana-Champaign
+//   </Chip>
+// );

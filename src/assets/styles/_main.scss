@@ -4,3 +4,21 @@ $font-weight: 300;
 main .container .row {
   margin-bottom: 0px;
 }
+
+.section {
+  padding-top: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  a div {
+    font-weight: 400;
+    img {
+      margin: 4px 5px 0px -7px;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+span.bolden {
+  font-weight: 500;
+}
