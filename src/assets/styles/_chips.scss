@@ -3,17 +3,16 @@ $chip-height: 20px;
 $line-height: $chip-height + 2px;
 $height: $chip-height - 2px;
 
-#footerMain p a {
-  height: $chip-height;
-}
-
-a .chip {
-  height: $chip-height;
-  line-height: $line-height;
-  > img {
-    height: $height;
-    /* margin: top, right, bottom, left */
-    margin: 1px 0 0 -12px;
+#footerMain div a {
+  height: $line-height;
+  .chip {
+    height: $line-height;
+    line-height: $line-height;
+      > img {
+        height: $height;
+        /* margin: top, right, bottom, left */
+        margin: 1px 0 0 -12px;
+      }
   }
 }
 
