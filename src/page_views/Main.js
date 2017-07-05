@@ -67,8 +67,11 @@ export default function Main() {
       </blockquote>
       <p>
         A web application written for Make The Road NJ, a nonprofit organization in
-        Elizabeth, NJ that helped gain popular support for legislation that would
-        allow all residents to get municipal IDs.
+        Elizabeth, NJ that helped gain popular support for&nbsp;
+        <a className="bitter-sweet-red-text" href="http://elizabethnj.org/elizabeth-municipal-id-program">
+          legislation
+        </a>
+        &nbsp;that allowed all residents (documented and undocumented) to get municipal IDs.
       </p>
     </div>
   );
