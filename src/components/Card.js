@@ -30,7 +30,7 @@ export default function Card(props) {
   return (
     <div className={`card ${CardBackground}`}>
       <div className={`card-content ${CardText}`}>
-        <span className={`card-title ${CardTextHeader}`}>
+        <span className={`card-title flow-text ${CardTextHeader}`}>
           {header}
         </span>
         {body}

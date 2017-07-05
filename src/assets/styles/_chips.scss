@@ -1,13 +1,16 @@
 @import "_colors.scss";
-$chip-height: 20px;
+$chip-height: 22px;
 $line-height: $chip-height + 2px;
 $height: $chip-height - 2px;
 
+// footer specific
 #footerMain div a {
   height: $line-height;
   .chip {
+    padding-top: 1px;
     height: $line-height;
     line-height: $line-height;
+    font-size: 1.05rem;
       > img {
         height: $height;
         /* margin: top, right, bottom, left */

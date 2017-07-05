@@ -8,8 +8,7 @@ import { reactChip } from 'src/assets/Chips';
 export default function FooterWrapper() {
   const title = 'Footer';
   const arrayTextUrls =
-    [['/whomst', 'whomst'],
-      ['/whomst', 'whomst']];
+    [['/build/resume.pdf', 'Resume']];
   const mainContent = (
     <div className={FooterClassText}>
       Created with {reactChip}
