@@ -2,7 +2,16 @@ import React from 'react';
 
 import Card from 'src/components/Card';
 import BoldText from 'src/components/BoldText';
-import { pythonChip, reactChip } from 'src/assets/Chips';
+import { pythonChip,
+  reactChip,
+  djangoChip,
+  socketIOChip,
+  nodeJsChip,
+  sassChip,
+  railsChip,
+  javaChip,
+  cplusplusChip,
+  cChip } from 'src/assets/Chips';
 
 import { MainBackground, MainLinks } from 'src/assets/style_constants.js';
 import 'src/assets/styles/_main.scss';
@@ -10,9 +19,14 @@ import 'src/assets/styles/_main.scss';
 export default function Main() {
   const educationBody = (
     <p>
-      Hi! My name is Max and I&apos;m a&nbsp;
-      <BoldText>junior studying Computer Science & Statistics</BoldText>
-      &nbsp;at the University of Illinois at Urbana-Champaign.
+      I&apos;m a&nbsp;
+      <BoldText>
+         junior studying Computer Science & Statistics
+      </BoldText>
+      &nbsp;at the&nbsp;
+      <BoldText>
+        University of Illinois at Urbana-Champaign.
+      </BoldText>
     </p>
   );
   const employmentBody = (
@@ -33,14 +47,31 @@ export default function Main() {
         and technology.
     </p>
   );
-  // const bigBody = (
-  //   <p>
-  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-  //     我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢我愛錢
-  //   </p>
-  // );
+  const lolChimeBody = (
+    <div>
+      <blockquote>
+        A CLI utility for League of Legends with over 10,000 downloads on NPM.
+      </blockquote>
+      <p>
+        A terminal utility & a web application that helps people play League of Legends with their
+        friends. It notifies players when their friends are finished with their game with
+        an audio notification.
+      </p>
+    </div>
+  );
+  const storyTimeBody = (
+    <div>
+      <blockquote>
+        A bilingual web application for undocumented immigrants to share
+        their stories and hardships.
+      </blockquote>
+      <p>
+        A web application written for Make The Road NJ, a nonprofit organization in
+        Elizabeth, NJ that helped gain popular support for legislation that would
+        allow all residents to get municipal IDs.
+      </p>
+    </div>
+  );
   return (
     <main className={MainBackground}>
       <div className="container">
@@ -49,11 +80,22 @@ export default function Main() {
             <Card
               header={'Education'}
               body={educationBody}
+              pills={[javaChip, cplusplusChip, cChip]}
             />
             <Card
               header={'Employment'}
               body={employmentBody}
-              pills={[pythonChip, reactChip]}
+              pills={[pythonChip, djangoChip, reactChip]}
+            />
+            <Card
+              header={'LoL Chime 🎐'}
+              body={lolChimeBody}
+              pills={[nodeJsChip, socketIOChip]}
+            />
+            <Card
+              header={'Story Time 📖'}
+              body={storyTimeBody}
+              pills={[railsChip, sassChip]}
             />
           </div>
         </div>

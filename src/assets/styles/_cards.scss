@@ -12,6 +12,9 @@
   overflow: visible;
 }
 
+.card-content span.card-title {
+  text-align: center;
+}
 @media only screen and (max-width: 600px) {
   .cards-container {
     -webkit-column-count: 1;
