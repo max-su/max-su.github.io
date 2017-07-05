@@ -18,7 +18,8 @@ export const MainBackground = 'emperor-gray-background';
 export const MainLinks = 'bitter-sweet-red-text';
 
 // Footer
-export const FooterClassHeaderText = 'bitter-sweet-red-text';
+export const FooterClassHeaderText = 'egg-white-yellow-text';
+// export const FooterClassHeaderText = 'bitter-sweet-red-text';
 export const FooterClassText = 'egg-white-yellow-text';
 
 // Chip

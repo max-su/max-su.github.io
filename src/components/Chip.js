@@ -6,9 +6,9 @@ import { ChipBackground,
 import 'src/assets/styles/_chips.scss';
 
 export default function Chip(props) {
-  const textAltImage = props.textAltImage;
   const url = props.url;
   let image = props.image;
+  const textAltImage = props.textAltImage;
 
   if (image != null) { // Create image element
     image = (
@@ -35,12 +35,11 @@ export default function Chip(props) {
 Chip.defaultProps = {
   url: null,
   image: null,
-  textAltImage: null,
 };
 
 Chip.propTypes = {
-  textAltImage: PropTypes.string,
   image: PropTypes.string, // SVG
   url: PropTypes.string,
   children: PropTypes.string.isRequired, // Text
+  textAltImage: PropTypes.string.isRequired, // Text
 };
