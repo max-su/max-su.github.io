@@ -5,9 +5,12 @@ import { FooterClassText } from 'src/assets/style_constants.js';
 
 
 export default function FooterWrapper() {
-  const title = 'Footer';
+  const title = 'Dependencies';
   const arrayTextUrls =
-    [['/build/resume.pdf', 'Resume']];
+    [['https://www.facebook.com/kingmixy', 'Facebook'],
+     ['https://github.com/max-su', 'GitHub'],
+     // ['/build/resume.pdf', 'Resume'],
+    ];
   const react = (
     <a className="bitter-sweet-red-text" href="https://facebook.github.io/react/">
       React.js
