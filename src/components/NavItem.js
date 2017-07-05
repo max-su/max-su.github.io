@@ -6,7 +6,7 @@ export default function NavItem(props) {
   const url = props.url;
   return (
     <li>
-      <Link to={url}>{props.children}</Link>
+      <Link className={'flow-text'} to={url}>{props.children}</Link>
     </li>
   );
 }

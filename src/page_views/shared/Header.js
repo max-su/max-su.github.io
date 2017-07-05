@@ -12,8 +12,8 @@ export default function Header() {
     <header className="center-align">
       <div className={BackgroundClass} id="header">
         <img className="circle responsive-img" id="header_icon" src={MaxSuJPG} alt="Max Su" />
-        <h4 className={HeaderText}>Max Su</h4>
-        <p className={`${HeaderButtonBackground} ${HeaderButtonText}`}>Software Engineer</p>
+        <h3 className={`${HeaderText}`}>Max Su</h3>
+        <p className={`flow-text ${HeaderButtonBackground} ${HeaderButtonText}`}>Software Engineer</p>
       </div>
     </header>
   );
