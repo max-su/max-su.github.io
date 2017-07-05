@@ -16,24 +16,28 @@ export default function FooterWrapper() {
     <FooterLinkItem
       url={'https://www.facebook.com/kingmixy'}
       svgImage={facebook}
+      altText={'Facebook'}
     />
   );
   const linkedinItem = (
     <FooterLinkItem
       url={'https://www.linkedin.com/in/max-su/'}
       svgImage={linkedin}
+      altText={'LinkedIn'}
     />
   );
   const githubItem = (
     <FooterLinkItem
       url={'https://github.com/max-su'}
       svgImage={github}
+      altText={'GitHub'}
     />
   );
   const emailItem = (
     <FooterLinkItem
       url={'mailto:max.su7@gmail.com'}
       svgImage={email}
+      altText={'Email'}
     />
   );
   const footerLinks = [facebookItem, linkedinItem, githubItem, emailItem];

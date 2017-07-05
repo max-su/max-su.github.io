@@ -24,7 +24,9 @@ $font-weight: 300;
   display: inline-block;
   margin-top: 14px;
   margin-right: 10px;
-  img {
+  width: 24px;
+  height: 24px;
+  object {
     width: 24px;
     height: 24px;
   }
@@ -32,16 +34,18 @@ $font-weight: 300;
 a:hover {
   color: $aqua;
 }
-
 #firefox-link:hover {
   color: $bitter-sweet-red;
 }
 
 // Super jank SCSS hijinks because email doesn't look like it fits.
+a object{
+  pointer-events: none;
+}
 #GitHub {
   margin-right: 5px;
 }
-#Email {
+#Email object{
   width: 30px;
   margin-bottom: 3px;
 }

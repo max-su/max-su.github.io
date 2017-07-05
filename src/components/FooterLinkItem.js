@@ -6,10 +6,12 @@ export default function FooterLinkItem(props) {
   const url = props.url;
   const altText = props.altText;
   const image = (
-    <img src={svgImage} id={altText} alt={altText} />
+    <object type="image/svg+xml" data={svgImage}>
+      {altText}
+    </object>
   );
   return (
-    <a href={url} className={'svg-wrapper-footer'}>
+    <a href={url} id={altText} className={'svg-wrapper-footer'}>
       {image}
     </a>
   );
