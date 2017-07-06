@@ -4,7 +4,7 @@ import Chip from 'src/components/Chip';
 import reactJs from 'src/assets/images/reactJs.svg';
 import python from 'src/assets/images/python.png';
 import django from 'src/assets/images/django.png';
-import nodeJs from 'src/assets/images/nodejs.svg';
+import nodeJs from 'src/assets/images/nodeJs.svg';
 import java from 'src/assets/images/java.png';
 import c from 'src/assets/images/c.png';
 import cplusplus from 'src/assets/images/c++.png';
