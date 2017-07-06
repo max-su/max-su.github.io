@@ -31,13 +31,13 @@ $font-weight: 300;
     height: 24px;
   }
 }
+
 a:hover {
   color: $aqua;
-  object svg {
+  span svg > path {
     fill: $aqua;
   }
 }
-
 
 #firefox-link:hover {
   color: $bitter-sweet-red;
@@ -52,5 +52,4 @@ a object{
 }
 #Email object{
   width: 30px;
-  margin-bottom: 3px;
 }

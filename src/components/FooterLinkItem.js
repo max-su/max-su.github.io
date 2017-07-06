@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Isvg from 'react-inlinesvg';
 
 export default function FooterLinkItem(props) {
   const svgImage = props.svgImage;
   const url = props.url;
   const altText = props.altText;
   const image = (
-    <object type="image/svg+xml" data={svgImage}>
+    <Isvg src={svgImage}>
       {altText}
-    </object>
+    </Isvg>
   );
   return (
     <a href={url} id={altText} className={'svg-wrapper-footer'}>
