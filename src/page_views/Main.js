@@ -91,7 +91,7 @@ export default function Main() {
               pills={[pythonChip, djangoChip, reactChip]}
             />
             <Card
-              header={'LoL Chime 🎐'}
+              header={'LoL Chime'}
               body={lolChimeBody}
               pills={[nodeJsChip, socketIOChip]}
             />
