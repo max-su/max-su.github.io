@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ListItemsLink from 'src/components/ListItems';
+// import ListItemsLink from 'src/components/ListItems';
 
 /* Styling */
 import { FooterClassHeaderText,
@@ -12,7 +12,7 @@ import 'src/assets/styles/_footer.scss';
 export default function Footer(props) {
   const title = props.title;
   const mainContent = props.mainContent;
-  const arrayTextUrls = props.arrayTextUrls;
+  const footerLinks = props.footerLinks;
   return (
     <footer className={`page-footer ${BackgroundClass}`}>
       <div className="container">
@@ -23,10 +23,7 @@ export default function Footer(props) {
           </div>
           <div className="col l4 s12" id="footerLinks">
             <h5 className={FooterClassHeaderText}>Links</h5>
-            <ListItemsLink
-              textClass={FooterClassText}
-              arrayTextUrl={arrayTextUrls}
-            />
+            {footerLinks}
           </div>
         </div>
       </div>
@@ -46,17 +43,15 @@ export default function Footer(props) {
   );
 }
 
-const arrayTextUrlDefault = [['/whomst', 'whomst'],
-                            ['/whomst', 'whomst']];
 
 Footer.defaultProps = {
   title: '',
   mainContent: <p>Default</p>,
-  arrayTextUrls: arrayTextUrlDefault,
+  footerLinks: null,
 };
 
 Footer.propTypes = {
   title: PropTypes.string.isRequired,
   mainContent: PropTypes.object.isRequired,
-  arrayTextUrls: PropTypes.array.isRequired,
+  footerLinks: PropTypes.array.isRequired,
 };

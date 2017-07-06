@@ -3,14 +3,44 @@ import React from 'react';
 import Footer from 'src/components/Footer';
 import { FooterClassText } from 'src/assets/style_constants.js';
 
+import facebook from 'src/assets/images/facebook.svg';
+import linkedin from 'src/assets/images/linkedin.svg';
+import github from 'src/assets/images/github.svg';
+import email from 'src/assets/images/email.svg';
+import FooterLinkItem from 'src/components/FooterLinkItem.js';
+
 
 export default function FooterWrapper() {
   const title = 'Dependencies';
-  const arrayTextUrls =
-    [['https://www.facebook.com/kingmixy', 'Facebook'],
-     ['https://github.com/max-su', 'GitHub'],
-     // ['/build/resume.pdf', 'Resume'],
-    ];
+  const facebookItem = (
+    <FooterLinkItem
+      url={'https://www.facebook.com/kingmixy'}
+      svgImage={facebook}
+      altText={'Facebook'}
+    />
+  );
+  const linkedinItem = (
+    <FooterLinkItem
+      url={'https://www.linkedin.com/in/max-su/'}
+      svgImage={linkedin}
+      altText={'LinkedIn'}
+    />
+  );
+  const githubItem = (
+    <FooterLinkItem
+      url={'https://github.com/max-su'}
+      svgImage={github}
+      altText={'GitHub'}
+    />
+  );
+  const emailItem = (
+    <FooterLinkItem
+      url={'mailto:max.su7@gmail.com'}
+      svgImage={email}
+      altText={'Email'}
+    />
+  );
+  const footerLinks = [facebookItem, linkedinItem, githubItem, emailItem];
   const react = (
     <a className="bitter-sweet-red-text" href="https://facebook.github.io/react/">
       React.js
@@ -29,7 +59,7 @@ export default function FooterWrapper() {
   return (
     <Footer
       title={title}
-      arrayTextUrls={arrayTextUrls}
+      footerLinks={footerLinks}
       mainContent={mainContent}
     />
   );

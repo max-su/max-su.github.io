@@ -20,10 +20,36 @@ $font-weight: 300;
   font-weight: $font-weight;
 }
 
+.svg-wrapper-footer {
+  display: inline-block;
+  margin-top: 14px;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  object {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 a:hover {
   color: $aqua;
+  span svg > path {
+    fill: $aqua;
+  }
 }
 
 #firefox-link:hover {
   color: $bitter-sweet-red;
+}
+
+// Super jank SCSS hijinks because email doesn't look like it fits.
+a object{
+  pointer-events: none;
+}
+#GitHub {
+  margin-right: 5px;
+}
+#Email object{
+  width: 30px;
 }

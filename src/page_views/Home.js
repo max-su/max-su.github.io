@@ -2,7 +2,7 @@ import React from 'react';
 import Header from 'src/page_views/shared/Header';
 import NavBarWrapper from 'src/page_views/shared/NavBarWrapper';
 import FooterWrapper from 'src/page_views/shared/FooterWrapper';
-import Main from 'src/page_Views/Main';
+import Main from 'src/page_views/Main';
 
 // export function Home({ match }) {
 export function Home() {
