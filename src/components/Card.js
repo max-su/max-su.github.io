@@ -15,6 +15,7 @@ export default function Card(props) {
   const pills = props.pills;
   let actionItem = props.actionItem;
   let bard = null;
+  let bardContentClass = null;
 
   if (actionItem != null) {
     actionItem = (
@@ -28,9 +29,10 @@ export default function Card(props) {
       <img src={bardGif} alt={'Bard'} id={'bard'} />
     );
   }
+  bardContentClass = (bard !== null) ? 'bard-content' : '';
   return (
     <div className={`card ${CardBackground}`}>
-      <div className={`card-content ${CardText}`}>
+      <div className={`card-content ${bardContentClass} ${CardText}`}>
         <span className={`card-title flow-text ${CardTextHeader}`}>
           {header} {bard}
         </span>

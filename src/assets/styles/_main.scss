@@ -41,8 +41,12 @@ span.bolden {
 
 // Bard gif styling
 #bard {
-  width: 45px;
+  width: 40px;
   position: relative;
   top: 8px;
   right: 10px;
+}
+
+.bard-content {
+  padding-top: 10px !important;
 }
