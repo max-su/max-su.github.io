@@ -100,7 +100,7 @@ export const railsChip = (
     textAltImage={'Ruby on Rails'}
     url={'http://rubyonrails.org/'}
   >
-    Rails
+    Ruby on Rails
   </Chip>
 );
 export const sassChip = (
@@ -109,6 +109,6 @@ export const sassChip = (
     textAltImage={'SASS/SCSS'}
     url={'http://sass-lang.com/'}
   >
-    Sass/Scss
+    SASS/SCSS
   </Chip>
 );
