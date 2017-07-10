@@ -6,19 +6,16 @@ import { CardBackground,
          CardText } from 'src/assets/style_constants.js';
 import 'src/assets/styles/_cards.scss';
 
+import bardGif from 'src/assets/images/bard.gif';
+
 export default function Card(props) {
   const header = props.header;
   const body = props.body;
 
   const pills = props.pills;
   let actionItem = props.actionItem;
-  // let divider = null;
-
-  // if (pills != null || actionItem != null) {
-  //   divider = (
-  //     <div className="divider" />
-  //   );
-  // }
+  let bard = null;
+  let bardContentClass = null;
 
   if (actionItem != null) {
     actionItem = (
@@ -27,11 +24,17 @@ export default function Card(props) {
       </div>
     );
   }
+  if (header === 'LoL Chime') {
+    bard = (
+      <img src={bardGif} alt={'Bard'} id={'bard'} />
+    );
+  }
+  bardContentClass = (bard !== null) ? 'bard-content' : '';
   return (
     <div className={`card ${CardBackground}`}>
-      <div className={`card-content ${CardText}`}>
+      <div className={`card-content ${bardContentClass} ${CardText}`}>
         <span className={`card-title flow-text ${CardTextHeader}`}>
-          {header}
+          {header} {bard}
         </span>
         {body}
       </div>
