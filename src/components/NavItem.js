@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import LinkDuo from 'src/components/LinkDuo';
 
 export default function NavItem(props) {
   const url = props.url;
   return (
     <li>
-      <Link className={'flow-text'} to={url}>{props.children}</Link>
+      <LinkDuo className={'flow-text'} to={url}>{props.children}</LinkDuo>
     </li>
   );
 }

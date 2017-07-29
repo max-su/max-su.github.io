@@ -8,7 +8,7 @@ export default function NavBarWrapper() {
   return (
     <NavBar className={BackgroundClass}>
       <NavItem url={'home'}>Home</NavItem>
-      <NavItem url={'https://github.com/max-su/resume/raw/master/max_su_resume/max_su_resume.pdf'}>Resume</NavItem>
+      <NavItem url={'https://drive.google.com/open?id=0B5WGSoA5QGRXeU1HZG1NOEpIY2c'}>Resume</NavItem>
     </NavBar>
   );
 }
