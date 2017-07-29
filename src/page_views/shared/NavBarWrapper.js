@@ -8,9 +8,7 @@ export default function NavBarWrapper() {
   return (
     <NavBar className={BackgroundClass}>
       <NavItem url={'home'}>Home</NavItem>
-      {/*
-      <NavItem url={'build/resume.pdf'}>Resume</NavItem>
-      */}
+      <NavItem url={'build/max_su_resume.pdf'}>Resume</NavItem>
     </NavBar>
   );
 }
